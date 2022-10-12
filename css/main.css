@@ -253,6 +253,12 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .social-icons i {
+  font-size: 2.5em;
+  margin: 40px 20;
+  
+}
+
 footer .copyright {
   margin: 20px 0;
 }
@@ -325,6 +331,7 @@ input[type=button] {
   background-position: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
 }
 
