@@ -3,32 +3,29 @@
 
 <head>
   <meta charset="utf-8">
-  <title>about</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Unplugged Retreat | About</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="../site.webmanifest">
   <link rel="apple-touch-icon" href="../icon.png">
   <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
-  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
+
 
 <body>
   <header>
     <div class="content-wrapper">
-      <a href="#">
-        <img src="" alt="unplugged logo">
-      </a>
+      <figure>
+        <a href="">
+          <img src="../img/unpluggedlogo.png" alt="unplugged logo">
+        </a>
+      </figure>
       <div class="header-divider"></div>
       <nav>
         <ul>
@@ -52,7 +49,8 @@
       </div>
     </section>
     <section class="map">
-      <figure></figure>
+      <figure>
+      </figure>
     </section>
   </main>
 
@@ -60,21 +58,41 @@
     <div class="content-wrapper">
       <h2>Contact us, because you all need this.</h2>
       <div class="contact-content">
-        <h4>General Information</h4>
-        <address>333 Main Street, Lake Geneva, WI 53147</address>
-        <address>555.555.555</address>
-        <address>hello@unplugged.com</address>
-        <h4>Chat with a Facilitator</h4>
-        <address>555.555.555</address>
-        <address>facilitator@unplugged.com</address>
+        <div>
+          <h4>General Information</h4>
+          <address>
+            <p>
+              333 Main Street, Lake Geneva, WI 53147<br>
+              555.555.555<br>
+              hello@unplugged.com
+            </p>
+          </address>
+        </div>
+        <div>
+          <h4>Chat with a Facilitator</h4>
+          <address>
+            <p>
+              555.555.555<br>
+              facilitator@unplugged.com
+            </p>
+          </address>
+        </div>
       </div>
-    </div>
   </section>
 
 
   <footer>
     <div class="content-wrapper">
       <div class="footer-content">
+        <div class="contact">
+          <h4>Contact</h4>
+          <address>
+            <p>
+              555-555-5555<br>
+              hello@unplugged.com
+            </p>
+          </address>
+        </div>
         <div class="social">
           <h4>Social</h4>
           <div class="social-icons">
@@ -85,30 +103,31 @@
         </div>
       </div>
     </div>
-
-    <div class="footer-content">
-      <div class="contact">
-        <h4>Contact</h4>
-        <address>555.555.555</address>
-        <address>hello@unplugged.com</address>
-      </div>
-      <div class="copyright">
-        <p>Copyright 2019 | Unplugged</p>
-      </div>
+    <div class="copyright">
+      <p>Copyright 2019 | Unplugged</p>
     </div>
   </footer>
   <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../js/vendor/jquery-3.3.1.min.js"><\/script>')
+  </script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
