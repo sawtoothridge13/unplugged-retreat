@@ -114,6 +114,8 @@ body {
 ul, 
 ol {
  list-style-type: none;
+ margin: 0;
+ padding: 0;
 }
  
 a {
@@ -130,7 +132,7 @@ h2 {
  
 h3, 
 h4 {
- font-family: 'Poppins' sans-serif;
+ font-family: 'Poppins', sans-serif;
  font-weight: 500;
  font-size: 1.125em;
  margin: 20px 0;
@@ -178,7 +180,7 @@ header {
 }
 
 header .content-wrapper {
-  margin: 0
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,7 +212,6 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  
 }
 
 header nav ul {
@@ -248,14 +249,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer .social-icons i {
-  font-size: 2.5em;
-  margin: 40px 20;
+  font-size: 1.3125em;
   
 }
 
@@ -331,7 +335,6 @@ input[type=button] {
   background-position: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -351,14 +354,16 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.features p {
-  margin: 0;
-}
-
 .features i {
   font-size: 3.75em;
   padding-bottom: 40px;
 }
+
+.features p {
+  text-align: center;
+  margin: 0;
+}
+
 /* Reviews */
 
 .reviews {
@@ -370,6 +375,7 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -624,7 +630,7 @@ aside .content-wrapper {
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {        
-    width:     40%    
+    width: 40%;
     margin: 0;
 }
 
@@ -676,7 +682,7 @@ footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex direction: row;
+    flex-direction: row;
 }
 
 footer .contact {
@@ -829,7 +835,7 @@ footer h4 {
 }
 
 .contact-content h4 {
-  font-size: 1.875;
+  font-size: 1.875em;
 }
 
 /* FAQ Page */
