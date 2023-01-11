@@ -1,31 +1,8 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -37,10 +14,6 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
 hr {
   display: block;
   height: 1px;
@@ -49,12 +22,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -65,27 +32,15 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea {
   resize: vertical;
 }
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
 
    .browserupgrade {
     margin: 0.2em 0;
@@ -94,12 +49,6 @@ textarea {
     padding: 0.2em 0;
    }  
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* General Styles */
- 
 html {
 	font-size: 16px;
 }
@@ -127,6 +76,7 @@ h2 {
  font-family: 'Poppins', sans-serifs;
  font-weight: 500;
  font-size: 1.875em;
+ margin: 0;
  color: #e2e3ed;
 }
  
@@ -258,7 +208,7 @@ footer .social-icons p {
   align-items: center;
 }
 
-footer .social-icons i {
+footer .social-icons p i {
   font-size: 1.3125em;
   
 }
@@ -393,16 +343,23 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.mission-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
+.map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%; 
+  overflow: hidden;
+  position: relative;
 }
 
-.mission-content p {
-  width: 45%;
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
+
+
 
 .contact-section {
   background-color: #2a423a;
@@ -412,34 +369,8 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.contact-section .content-wrapper h2 {
-  width: 80%;
-}
-
-.contact-content {
-  display:flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 .contact-content p {
   margin: 0;
-}
-
-.map figure {
-  width: 100%;
-  height: 0;
-  padding-bottom: 125%;
-  overflow: hidden;
-  position: relative;
-}
-
-.map iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 /* FAQ Page */
@@ -461,13 +392,11 @@ input[type=button] {
 }
 
 .faq h2 {
-  width: 100%;
   margin-bottom: 40px;
   line-height: 1;
 }
 
 .faq-content {
-  flex-basis: 45%;
   margin-bottom: 50px;
 }
 
@@ -475,94 +404,49 @@ input[type=button] {
   line-height: 1.333;
 }
 
-
-   /* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
+.hidden {
   display: none !important;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
+.visuallyhidden {
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  clip: rect(0 0 0 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  white-space: nowrap;
   width: 1px;
-  /* 1 */
+  white-space: nowrap;
 }
 
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  white-space: inherit;
   width: auto;
+  white-space: inherit;
 }
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
 
 .invisible {
   visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
+.clearfix:before,
+.clearfix:after {
   content: " ";
+  /* 1 */
   display: table;
+  /* 2 */
 }
 
-.clearfix::after {
+.clearfix:after {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
 @media screen and (min-width: 768px) {
 
@@ -652,6 +536,10 @@ aside .content-wrapper .form {
     width: 62%;
 }
 
+.features i {
+  margin-bottom: 30px;
+}
+
 /* Reviews */
 .reviews article {
   display: flex;
@@ -698,6 +586,11 @@ footer p {
   line-height: 1.285;
 }
 
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+}
+
 footer .copyright {
     width: 100%;
 }
@@ -718,6 +611,10 @@ footer .copyright {
       width: 45%;
     }
   
+    .map figure {
+      padding-bottom: 45.5%;
+    }  
+
     .contact-section .content-wrapper h2 {
       width: 80%;
     }
@@ -822,11 +719,19 @@ aside .content-wrapper .form {
   padding-bottom: 50px;
 }
 
+.reviews article div {
+  width: 42%;
+}
+
 footer h4 {
   font-size: 1.875em;
 }
 
 /* About Page */
+
+.map figure {
+  padding-bottom: 37.5%;
+}
 
 .mission h2,
 .contact-section .content-wrapper h2 {
@@ -853,19 +758,13 @@ footer h4 {
 
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
 @media print {
   *,
   *::before,
   *::after {
     background: #fff !important;
     color: #000 !important;
-    /* Black prints faster */
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -883,10 +782,6 @@ footer h4 {
     content: " (" attr(title) ")";
   }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -902,10 +797,6 @@ footer h4 {
     page-break-inside: avoid;
   }
 
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
   thead {
     display: table-header-group;
   }
